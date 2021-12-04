@@ -1,0 +1,277 @@
+
+.footer-intro-container{
+    width: 100%;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* 1 - encontra tu tienda */
+.storelocator{
+    align-self: center;
+    width: 95%;
+    height: 14vw;
+    min-height: 180px;
+    max-height: 200px;
+
+    cursor: pointer;
+}
+    .storelocator img{
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+    }
+
+/* 2 - info blocks */
+.infoblocks{
+    align-self: center;
+    margin-top: 3%;
+    width: 90%;
+    height: 40vh;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+    .infoitem{
+        max-width: 393px;
+
+        flex-grow: 1;
+
+        display: flex;
+        align-items: center;
+    }
+        .infoitem img{
+            width: 15%;
+            margin-left: 2%;
+            margin-right: 2%;
+            margin-bottom: 10%;
+
+            object-fit: contain;
+        }
+
+/* 3 - footer */
+footer{
+    background: rgb(44, 44, 44);
+    margin-top: 3%;
+    width: 100%;
+    height: fit-content;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+    /*newsletter*/
+    .newsletter{
+        margin-top: 3%;
+        margin-left: 3%;
+
+        width: 60%;
+        height: fit-content;
+
+        color:  white;
+        display: flex;
+        flex-direction: column;
+    }
+        .newsletter p{
+            margin-bottom: 5%;
+
+            width: 100%;
+            font-size: 20px;
+
+            display: flex;
+            flex-direction: column;
+        }
+        .newsletter  p b{
+            margin-bottom: 3%;
+
+            font-size: 30px;
+            border-bottom: 3px solid white;
+        }
+        .newslettermail{
+            width: 100%;
+            max-width: 450px;
+            height: 5vw;
+            min-height: 35px;
+            max-height: 50px;
+        }
+                .newslettermail input{
+                    border: 0;
+                    border-radius: 3px;
+
+                    width: 100%;
+                    height: 100%;
+    
+                    font-size: 100%;
+                    text-indent: 5%;
+    
+                    color: white;
+                    background-color: rgba(180, 180, 180, 0.363);
+                }
+    /*logo*/
+    .footerlogo{
+        margin-top: 3%;
+
+        margin-left: 3%;
+
+        width: 30%;
+        height: fit-content;
+    }
+        
+    /*tienda online*/
+    .tiendaonline{
+        margin-top: 10%;
+
+        margin-left: 3%;
+        width: 47%;
+        height: fit-content;
+
+        color:  white;
+        display: flex;
+        flex-wrap: wrap;
+    }
+        .tiendaonline b{
+            border-bottom: 1px solid white;
+        }
+        .tiendaonline a{
+            text-decoration: none;
+            color: white;
+            font-size: 100%;
+        }
+    /*sobre nosotros*/
+    .sobrenosotros{
+        border-left: 1px solid rgba(255, 255, 255, 0.658);
+        margin-top: 10%;
+
+        margin-right: 3%;
+        padding-left: 3%;
+        width: 47%;
+        height: fit-content;
+
+        color:  white;
+        display: flex;
+        flex-wrap: wrap;
+    }
+        .sobrenosotros b{
+            border-bottom: 1px solid white;
+        }
+        .sobrenosotros a{
+            text-decoration: none;
+            color: white;
+            font-size: 100%;
+        }
+    /*social*/
+    .social{
+        margin-top: 10%;
+
+        width: 100%;
+        height: fit-content;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+        .social p{
+            border-bottom: 1px solid white;
+            
+            width: fit-content;
+            align-self: center;
+            color: white;
+        }
+        .social-icons{
+            margin: 3% 3%;
+            width: 90%;
+
+            display: flex;
+            align-self: center;
+            flex-direction: row;
+            align-content: space-between;
+            justify-content: space-between;
+        }
+            .social-icons img{
+                width: 15%;
+                height: 15%;
+            }
+    /*copyright*/
+    .copyright{
+        margin-top: 10%;
+        margin-left: 3%;
+        margin-bottom: 3%;
+        width: 90%;
+        height: fit-content;
+
+        color:  white;
+        display: flex;
+        flex-wrap: wrap;
+        align-self: center;
+        justify-self: center;
+    }
+        .copyright p{
+            display: flex;
+            flex-direction: column;
+        }
+            .copyright p b{
+                border-bottom: 1px solid white;
+                align-self: center;
+            }
+            .copyright p a{
+                text-decoration: none;
+                color: rgba(101, 101, 199, 0.822);
+            }
+
+@media only screen and (min-width: 800px){
+    .newsletter{
+
+        margin-right: 0;
+
+        width: 25%;
+    }
+    .footerlogo{
+
+        margin-top: 0;
+        margin-right: 0;
+        margin-left: 0;
+
+        width: 15%;
+    }
+    .tiendaonline{
+
+        margin-top: 3%;
+        margin-left: 0;
+
+        width: 15%;
+    }
+    .sobrenosotros{
+        
+        margin-top: 3%;
+        margin-right: 0;
+        margin-left: 0;
+
+        width: 20%;
+    }
+    .social{
+
+        margin-top: 3%;
+        margin-left: 0;
+
+        width: 20%;
+        height: fit-content;
+    }
+        .social-icons{
+            width: 90%;
+        }
+            .social-icons img{
+                width: 20%;
+            }
+    .copyright{
+        margin-top: 0;
+        margin-left: 3%;
+        margin-bottom: 3%;
+        width: 100%;
+    }
+        .copyright p b{
+            border-bottom: 1px solid white;
+            align-self: flex-start;
+        }
+}

@@ -1,0 +1,41 @@
+/*_________MARQUEE_________*/
+.section-advertising {
+    background: black;
+
+    width: 100%;
+    height: 4vh;
+}
+    .marquee {
+        width: 100vw;
+        height: 100%;
+
+        overflow: hidden;
+    }
+        .marquee-content{
+            width: 100%;
+            height: 100%;
+            padding: auto auto;
+
+            display: flex;
+            justify-content: space-between;
+
+            animation: scrolling 10s linear infinite;
+            
+        }
+        .marquee-content:hover{
+            animation-play-state: paused;
+        }
+            .marquee-content span{
+                font-size: 100%;
+                color: white;
+                text-shadow:
+                0 0 7px #fff,
+                0 0 10px #fff,
+                0 0 21px #fff;
+
+                margin: auto auto;
+            }
+@keyframes scrolling{
+    0%{transform: translateX(100%);}
+    100%{transform: translateX(-100%);}
+}
